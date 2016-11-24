@@ -1,0 +1,20 @@
+body {
+	background-color: #D0DAC1;
+	font-family: Arial;
+}
+#header {
+	background-color: #E3D386;
+	color: #ED53A0;
+}
+
+h1 {
+	background-color: #6087CE;
+	color: #E9F0DE;
+	text-align: center;
+	padding: 10px;
+}
+
+li.cikulka {
+	font-weight: bold;
+	padding: 10px 10px 10px 10px;
+}
