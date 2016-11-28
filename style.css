@@ -1,20 +1,34 @@
 body {
-	background-color: #D0DAC1;
+	background-color: #f2f2f2;
 	font-family: Arial;
 }
-#header {
+#header .container {
 	background-color: #E3D386;
 	color: #ED53A0;
 }
 
 h1 {
-	background-color: #6087CE;
-	color: #E9F0DE;
+	font-family: Arial;
+	background-color: #999999;
+	color: #E3DEDE;
 	text-align: center;
 	padding: 10px;
 }
 
-li.cikulka {
+li.zoznam {
 	font-weight: bold;
 	padding: 10px 10px 10px 10px;
+}
+
+#content .zoznam {
+	text-align: left;
+}
+
+#footer {
+	clear:both;
+	padding: 10px;
+	background-color: #999999;
+	color: white;
+	text-align: center;
+	font-family: Arial;
 }
