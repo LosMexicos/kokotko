@@ -111,6 +111,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	color: #878787;
+	line-height: 1.65;
 }
 
 .orderbutton {
@@ -123,4 +124,98 @@ body {
  	font-size: 12px;
  	border-radius: 15px;
 	background-color: #BABEC1;
+}
+
+/* ========= COLUMN-LAYOUT =========== */
+
+.column-layout {
+	background-color: #FFFFFE;
+	margin: 0;
+	line-height: 1.65;
+	padding: 20px 50px;
+	display: flex;
+	/*flex-direction: column;*/
+	font-family: Arial;
+	color: #878787;
+	font-size: 110%;
+}
+/*
+.column-layout h1 {
+	margin: auto;
+}
+*/
+.column-s {
+	width: 30%;
+	margin-right: 120px;
+	box-sizing: border-box;
+}
+.column-s img {
+	max-width: 500px;
+	max-height: 500px;
+	box-sizing: border-box;
+	color: #878787;
+}
+
+.column-p {
+	margin-right: 120px;
+	box-sizing: border-box;
+	width: 30%;
+}
+
+.column-p img {
+	max-width: 500px;
+	max-height: 500px;
+	box-sizing: border-box;
+	color: #878787;
+}
+
+.column-o {
+	margin-right: 120px;
+	box-sizing: border-box;
+	width: 30%;
+}
+
+.column-o img {
+	max-width: 500px;
+	max-height: 500px;
+	box-sizing: border-box;
+	color: #878787;
+}
+
+/*============== CONTAINER-LAYOUT =============*/
+
+.container {
+	background-color: #FFFFFE;
+	margin: 0;
+	line-height: 1.65;
+	padding: 20px 50px;
+	display: flex;
+	font-family: Arial;
+	color: #878787;
+	font-size: 110%;
+	justify-content: space-between;
+}
+
+.container1 {
+	background-color: #FFFFFE;
+	margin: 0;
+	line-height: 1.65;
+	padding: 20px 30px;
+	display: flex;
+	flex-direction: column;
+	font-family: Arial;
+	color: #878787;
+	font-size: 110%;
+	box-sizing: border-box;
+	flex-basis: 55%;
+}
+
+.container1 h2 {
+	margin: auto;
+}
+
+.container1 img {
+	box-sizing: border-box;
+	color: #878787;
+	flex-basis: 35%;
 }
