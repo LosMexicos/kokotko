@@ -26,6 +26,16 @@ body {
 	margin: 10px 3px;
 }
 
+#header button:hover {
+	width: 20px;
+ 	height: 20px;
+ 	padding: 6px 0;
+ 	font-size: 12px;
+ 	border-radius: 15px;
+	background-color: #878787;
+	margin: 10px 3px;
+}
+
 /* ========= CONTACT ========== */
 
 #contact {
@@ -124,6 +134,20 @@ body {
  	font-size: 12px;
  	border-radius: 15px;
 	background-color: #BABEC1;
+	color: #BABEC1;
+}
+
+.orderbutton:hover {
+	box-sizing: border-box;
+	width: 160px;
+	height: 65px;
+	order: 3;
+	margin: auto;
+ 	padding: 8px 0;
+ 	font-size: 25px;
+ 	border-radius: 15px;
+	background-color: #BABEC1;
+	color: #878787;
 }
 
 /* ========= COLUMN-LAYOUT =========== */
@@ -138,6 +162,7 @@ body {
 	font-family: Arial;
 	color: #878787;
 	font-size: 110%;
+	justify-content: space-between;
 }
 /*
 .column-layout h1 {
@@ -170,7 +195,7 @@ body {
 }
 
 .column-o {
-	margin-right: 120px;
+	margin-right: 60px;
 	box-sizing: border-box;
 	width: 30%;
 }
@@ -253,10 +278,135 @@ body {
 }
 
 .important p {
-	flex-basis: 45%;
 	color: #878787;
 	font-size: 320%;
 	padding: 50px;
 	margin: auto;
 	box-sizing: border-box;
+}
+
+/*============ PRICES-LAYOUT ============ */
+
+#prices-layout {
+	margin: 120px;
+	background-color: #FFFFFE;
+	display: flex;
+	justify-content: space-between;
+}
+
+/*=========== PRICES 1and3 ========== */
+
+.prices1and3 {
+	background-color: #E9EEF1;
+	padding: 20px;
+	border: solid 1px #BABEC1;
+	line-height: 1.65;
+	color: #878787;
+}
+
+#prices h2 {
+	text-align: center;
+}
+
+
+.prices-column p {
+	color: #878787;
+	font-family: Arial;
+	font-size: 110%;
+	box-sizing: border-box;
+}
+
+.prices-column ul {
+	list-style-type: none;
+}
+
+#footer1 {
+	background-color: #BABEC1;
+	height: 60px;
+	font-size: 130%;
+	text-align: center;
+}
+
+/*========= PRICES 2 ========== */
+
+#prices2 {
+	background-color: #E9EEF1;
+	padding: 20px;
+	border: solid 1px #BABEC1;
+	line-height: 1.65;
+	color: #878787;
+	margin: -50px auto 50px auto;
+	box-sizing: border-box;
+}
+
+#prices h2 {
+	text-align: center;
+}
+
+
+.prices-column p {
+	color: #878787;
+	font-family: Arial;
+	font-size: 110%;
+	box-sizing: border-box;
+	display: flex;
+}
+
+.prices-column ul {
+	list-style-type: none;
+}
+
+#footer1 {
+	height: 60px;
+	font-size: 130%;
+	margin: auto;
+	padding: 5px 55px 80px 50px;
+/*i dont know why the margin: auto; is not working*/
+	box-sizing: border-box;
+}
+
+/*======== FORM-CONTAINER ======= */
+
+#form-container {
+	background-color: #E9EEF1;
+	color: #878787;
+	font-family: Arial;
+	line-height: 1.65;
+	margin: auto;
+	padding: 20px 30px;
+	display: flex;
+	font-size: 110%;
+	float: right;
+}
+
+
+.form-row {
+	padding: 10px auto;
+	display: flex;
+}
+
+.form-row label {
+	background-color: #BABEC1;
+	padding: 10px auto;
+	margin: 10px 0 10px 10px;
+	border-top-left-radius: 15px;
+	border-bottom-left-radius: 15px;
+}
+
+.form-row input {
+	padding: 10px auto;
+}
+
+/*======== FOOTER =======*/
+
+#footer2 {
+	display: flex;
+	clear: both;
+}
+
+#footer2 img {
+	box-sizing: border-box;
+	color: #878787;
+	flex-basis: 100%;
+	max-height: 350px;
 }
