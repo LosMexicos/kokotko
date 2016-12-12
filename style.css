@@ -95,6 +95,15 @@ body {
 	float: left;
 }
 
+#navbar img:hover {
+	max-width: 100px;
+	max-height: 60px;
+	float: left;
+	box-shadow: 6px 6px 2px #BABEC1;
+	border-radius: 10px;
+}
+
+
 /*======== INTRO ======== */
 
 .introduction {
@@ -112,6 +121,13 @@ body {
 	order: 1;
 }
 
+.introduction img:hover {
+	max-height: 500px;
+	max-width: 800px;
+	box-shadow: 10px 10px 5px #BABEC1;
+	border-radius: 35px;
+	order: 1;
+}
 
 #order {
 	float: right;
@@ -163,53 +179,37 @@ body {
 	color: #878787;
 	font-size: 110%;
 	justify-content: space-between;
+	flex-direction: row;
 }
-/*
-.column-layout h1 {
-	margin: auto;
-}
-*/
-.column-s {
-	width: 30%;
-	margin-right: 120px;
-	box-sizing: border-box;
-}
-.column-s img {
-	max-width: 500px;
-	max-height: 500px;
+
+.column-layout img {
 	box-sizing: border-box;
 	color: #878787;
+	margin: 20px;
+}
+
+.column-layout h2 {
+	margin: auto;
+}
+
+.column-s {
+	margin-right: 120px;
+	box-sizing: border-box;
 }
 
 .column-p {
 	margin-right: 120px;
 	box-sizing: border-box;
-	width: 30%;
-}
-
-.column-p img {
-	max-width: 500px;
-	max-height: 500px;
-	box-sizing: border-box;
-	color: #878787;
 }
 
 .column-o {
 	margin-right: 60px;
 	box-sizing: border-box;
-	width: 30%;
 }
 
-.column-o img {
-	max-width: 500px;
-	max-height: 500px;
-	box-sizing: border-box;
-	color: #878787;
-}
+/*========== CONTAINER "A" -LAYOUT ==========*/
 
-/*============== CONTAINER-LAYOUT =============*/
-
-.container {
+.containerA {
 	background-color: #FFFFFE;
 	margin: 0;
 	line-height: 1.65;
@@ -221,7 +221,7 @@ body {
 	justify-content: space-between;
 }
 
-.container img {
+.containerA img {
 	box-sizing: border-box;
 	color: #878787;
 	flex-basis: 30%;
@@ -294,20 +294,19 @@ body {
 	justify-content: space-between;
 }
 
+#prices-layout h2 {
+	margin: 20px 40px;
+}
+
 /*=========== PRICES 1and3 ========== */
 
 .prices1and3 {
 	background-color: #E9EEF1;
-	padding: 20px;
+	padding: 0;
 	border: solid 1px #BABEC1;
 	line-height: 1.65;
 	color: #878787;
 }
-
-#prices h2 {
-	text-align: center;
-}
-
 
 .prices-column p {
 	color: #878787;
@@ -331,18 +330,13 @@ body {
 
 #prices2 {
 	background-color: #E9EEF1;
-	padding: 20px;
+	padding: 0;
 	border: solid 1px #BABEC1;
 	line-height: 1.65;
 	color: #878787;
 	margin: -50px auto 50px auto;
 	box-sizing: border-box;
 }
-
-#prices h2 {
-	text-align: center;
-}
-
 
 .prices-column p {
 	color: #878787;
@@ -365,9 +359,9 @@ body {
 	box-sizing: border-box;
 }
 
-/*======== FORM-CONTAINER ======= */
+/*========== CONTAINER "B" -LAYOUT ==========*/
 
-#form-container {
+#containerB {
 	background-color: #E9EEF1;
 	color: #878787;
 	font-family: Arial;
@@ -376,9 +370,31 @@ body {
 	padding: 20px 30px;
 	display: flex;
 	font-size: 110%;
-	float: right;
+	flex-direction: row;
 }
 
+#contacts {
+	font-family: Arial;
+	box-sizing: border-box;
+	line-height: 1.65;
+	padding: 10px;
+	margin: 20px;
+	flex-basis: 60%;
+}
+
+/*======== FORM CONTAINER ======== */
+
+#form-container {
+	box-sizing: border-box;
+	padding: 10px;
+	margin: 20px;
+	display: flex;
+	flex-direction: column;
+}
+
+#form-container h2 {
+	margin: auto;
+}
 
 .form-row {
 	padding: 10px auto;
@@ -394,7 +410,14 @@ body {
 }
 
 .form-row input {
-	padding: 10px auto;
+	font-family: Arial;
+	box-sizing: border-box;
+	line-height: 1.65;
+	padding: 10px;
+	font-size: 130%;
+	color: #878787;
+	border-style: none;
+	margin: 5px auto 5px 0;
 }
 
 /*======== FOOTER =======*/
@@ -406,7 +429,7 @@ body {
 
 #footer2 img {
 	box-sizing: border-box;
-	color: #878787;
+	background-color: #878787;
 	flex-basis: 100%;
 	max-height: 350px;
 }
